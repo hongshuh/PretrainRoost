@@ -1,12 +1,12 @@
-batch_size: 8192
+batch_size: 128
 epochs: 10
 eval_every_n_epochs: 1
 fine_tune_from: None
 log_every_n_steps: 50
 gpu: cuda:0
 data_seed: 42
-data_path: ./data/datasets/pretrain/unique_all_datasets.csv
-fea_path: ./data/el-embeddings/matscholar-embedding.json
+data_path: ./pretrain/unique_all_datasets.csv
+fea_path: ./el-embeddings/matscholar-embedding.json
 workers: 4
 tasks: SSL
 targets: Pre
