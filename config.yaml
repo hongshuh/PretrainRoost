@@ -1,12 +1,12 @@
-batch_size: 256
+batch_size: 128
 epochs: 100
 eval_every_n_epochs: 1
 fine_tune_from: None
 log_every_n_steps: 50
 gpu: cuda:1
 data_seed: 42
-data_path: ./h_MOF.csv
-fea_path: ./data/el-embeddings/matscholar-embedding.json
+data_path: ./pretrain/hmof_sample.csv
+fea_path: ./el-embeddings/matscholar-embedding.json
 workers: 4
 tasks: SSL
 targets: Pre

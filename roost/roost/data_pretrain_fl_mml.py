@@ -59,7 +59,7 @@ class CompositionData(Dataset):
         #         n_classes = np.max(self.df[target].values) + 1
         #         self.n_targets.append(n_classes)
         # self.magpie = self.df.iloc[:,4:]
-        self.embeddings = pickle.load(open('/home/hongshuh/BT_magpie/BT/dictionary_hmof.pickle','rb'))
+        self.embeddings = pickle.load(open('./pretrain/hmof_sample.pickle','rb'))
 
     def __len__(self):
         return len(self.df)
