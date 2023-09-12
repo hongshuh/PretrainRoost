@@ -1,0 +1,55 @@
+batch_size: 8192
+epochs: 10
+eval_every_n_epochs: 1
+fine_tune_from: None
+log_every_n_steps: 50
+gpu: cuda:0
+data_seed: 42
+data_path: ./data/datasets/pretrain/unique_all_datasets.csv
+fea_path: ./data/el-embeddings/matscholar-embedding.json
+workers: 4
+tasks: SSL
+targets: Pre
+losses: SSL
+#epochs:  100
+robust: False
+data_id: 0
+elem_fea_len: 64
+n_graph: 3
+ensemble: 1
+model_name: Roost
+run_id: 1
+finetune_from: None
+finetune: None
+patience: 10
+log: True
+sample: 0
+resume: False
+test_size: 0.0
+val_size: 0.05
+test_path: None
+val_path: None
+fine_tune: None
+transfer: None
+train: True
+evaluate: True     
+optim: Adam
+lr: 0.0001
+weight_decay: 1e-6
+momentum: 0.9
+device: "cuda:0"
+
+#optim:
+#  optimizer: AdamW
+#  lr: 0.00001
+#  weight_decay: 1e-6
+#  momentum: 0.9
+
+dataloader:
+  val_ratio: 0.05
+  num_workers: 0
+
+loss:
+  embed_size: 256
+  lambd: 0.0051
+  batch_size: 64
