@@ -3,7 +3,7 @@
 ## Enviroment Set up
 
 ```sh
-conda env create -f enviroment.yml
+conda env create -f environment.yml
 ```
 
 ## Example of SSL
